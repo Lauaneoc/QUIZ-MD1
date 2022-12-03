@@ -1,13 +1,36 @@
 body {
-  background: linear-gradient(45deg, #a7cfdf 0%, #23538a 100%);
   font-family: 'Inter';
+  background-color: #f8f8f8;
   min-height: 100vh;
   margin: 0;
+  padding: 0;
 }
 
 header {
-  background-color: #23538a;
+  background: linear-gradient(45deg, #a7cfdf 0%, #23538a 100%);
+  position: fixed;
+  width: 100%;
 }
+
+header ul {
+  display: flex;
+  justify-content: end;
+  gap: 3rem;
+  padding: 2rem 4.1rem;
+  margin: 0;
+}
+
+header ul li {
+  list-style-type: none;
+}
+
+header ul li a {
+  color: #f5f5f5;
+  text-decoration: none;
+  font-family: 'Inter';
+  font-size: 16px;
+}
+
 
 main {
   display: flex;
@@ -16,28 +39,39 @@ main {
   align-items: center;
 }
 
-.title {
-  color: white;
-  margin: 4rem 0;
+span {
+  color: #a7cfdf;
+  font-weight: bold;
 }
 
 p {
   margin: 0;
 }
+.title {
+  color: #23538a;
+  margin: 10rem 0 2rem;
+}
 
+
+.content {
+  background-color: #23538a;
+  box-sizing: border-box;
+  width: 70%;
+  border-radius: 15px;
+  padding: 0 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .perguntas {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 1rem;
+  padding: 1rem 0;
+  gap: 1rem;
   margin-top: 1rem;
 }
 
-.content {
-  background-color: #23538a;
-  width: 90%;
-  border-radius: 15px;
-}
 
 select {
   padding: .4rem;
@@ -52,9 +86,11 @@ label {
 }
 
 #send {
-  background: linear-gradient(45deg, #23538a  20%,  #a7cfdf 100%);
+  background: linear-gradient(45deg, #a7cfdf 0%, #23538a 100%);
   border-radius: 20px;
-  width: 90%;
+  position: relative;
+  left: 21rem;
+  width: 20%;
   border: none;
   margin-top: 2rem;
   padding: 1rem 0;
@@ -64,23 +100,32 @@ label {
   color: #f5f5f5;
   font-weight: bold;
   box-sizing: border-box;
+  border: none;
+}
+
+#send:hover {
+  opacity: 0.;
 }
 
 footer {
-  width: 100%;
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
   align-items: center;
   background-color: #23538a;
   margin-top: 6rem;
-  padding: 2rem 0;
+  padding: 0;
 }
 
 footer ul li {
   list-style-type: none;
   text-align: center;
   color: #a7cfdf;
-  padding-top: 1rem;
+  display: flex;
+}
+
+footer ul li img {
+  width: 90px;
 }
 
   
